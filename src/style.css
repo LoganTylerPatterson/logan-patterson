@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+#warning {
+  color: #f2746b;
+  position: absolute;
+  top: 10px;
+  left:5vw;
+}
+
+#info {
+  color:#f2746b;
+  position: absolute;
+  top: 10px;
+  left: 50vw;
+}
