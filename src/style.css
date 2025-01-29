@@ -1,16 +1,17 @@
 body {
   margin: 0;
+  font-family: serif;
 }
 
 #warning {
-  color: #f2746b;
+  color: seashell;
   position: absolute;
   top: 10px;
   left:5vw;
 }
 
 #info {
-  color:#f2746b;
+  color:seashell;
   position: absolute;
   top: 10px;
   left: 50vw;

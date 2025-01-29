@@ -72,20 +72,20 @@ function loop() {
         }
 
         if (Math.random() > 0.95 && branches.length < 1000) {
-            branches.push(new Branch(branch.x, branch.y, branch.max_life / 10));
+            branches.push(new Branch(branch.x, branch.y, branch.max_life / 10, branch.color));
         }
     }
 }
 
 class Branch {
-    constructor(x, y, max_life) {
+    constructor(x, y, max_life, color = undefined) {
         this.life = 0;
         this.max_life = max_life;
         this.speed = Math.random() + 1;
         this.x = x;
         this.y = y;
         this.rw = Math.random() * 360;
-        this.color = getRandomBrightColor(); // Assign random color
+        this.color = color == undefined ? getRandomBrightColor() : color; // Assign random color
     }
 }
 
